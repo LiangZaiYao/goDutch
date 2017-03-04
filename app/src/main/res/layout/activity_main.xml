@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.edu.cqu.mydutch.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAmount"
+        android:text="Amount"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:maxLength="8"
+        android:id="@+id/etAmount"
+        android:text=""
+        android:layout_below="@+id/tvAmount" />
+
+
+
+    <TextView
+        android:text="Number of People"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNumber"
+        android:layout_below="@+id/etAmount" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:maxLength="3"
+        android:text=""
+        android:id="@+id/etNumber"
+        android:layout_below="@id/tvNumber"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCost"
+        android:text="Cost per Person"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/etNumber" />
+
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="0.00"
+    android:textSize="45dp"
+    android:textColor="@color/black"
+    android:ems="10"
+    android:id="@+id/tvResult"
+    android:textAlignment="center"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="CONFIRM"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnConfirm"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/tvResult"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnConfirm"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:radius="50dip"
+        />
+</RelativeLayout>
